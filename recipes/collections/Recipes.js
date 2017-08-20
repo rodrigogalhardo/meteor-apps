@@ -10,23 +10,11 @@ RecipeSchema = new SimpleSchema({
     },
     author: {
         type: String,
-        label: "Author",
-        autoValue: function () {
-            return this.userId
-        },
-        autoForm:{
-            type:"hidden"
-        }
+        label: "Author"
     },
     createdAt: {
         type: Date,
-        label: "CreatedAt",
-        autoValue: function () {
-            return new Date()
-        },
-        autoForm:{
-            type:"hidden"
-        }
+        label: "CreatedAt"
     }
 });
 
